@@ -24,6 +24,7 @@ class _AddTaskButtonState extends State<AddTaskButton> {
   Widget build(BuildContext context) {
     if (_isExpanded) {
       return Container(
+        margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
         decoration: BoxDecoration(
           color: Theme.of(context).brightness == Brightness.dark
@@ -100,6 +101,7 @@ class _AddTaskButtonState extends State<AddTaskButton> {
           });
         },
         child: Container(
+          margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
           decoration: BoxDecoration(
             color: Theme.of(context).brightness == Brightness.dark
